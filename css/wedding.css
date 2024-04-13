@@ -1,0 +1,229 @@
+body,html{
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+  font-size: 15px;
+  line-height: 2;
+  background-color: #f3d7dc;
+}
+.contaner{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 10px 0;
+}
+@media(min-width:768px){
+    .contaner{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .contaner{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .contaner{
+        width: 1170px;
+    }
+}
+/* frist part */
+.frist-part {
+    background-image: url(../img/wedding_couple.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    filter: saturate(0.5);
+}
+.frist-part .wedding-time{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 31px;
+    word-spacing: 2.5px;
+    letter-spacing: 2.5px;
+}
+.frist-part .wedding-time h3,h4,h1{
+    font-weight: 400;
+}
+/* end of frist part */
+/* start nav bar */
+.nav{
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+    position: sticky;
+    top: 100%;
+    bottom: 0px;
+    z-index: 100;
+    padding: 8px 16px;
+    background-color: #ffffff7d;
+    transition-duration: .2s;
+}
+ul li{
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+ul a{
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition-duration: .2s;
+    color: black;
+}
+ul a:hover{
+    background-color: gray;
+}
+ul:hover {
+    background-color: white;
+}
+
+/* end nav bar */
+/* start info about Jane & John */
+.jane{
+    padding: 35px 0;
+}
+.jane-info{
+    text-align: center;
+    padding: 30px;
+}
+.jane-info h1{
+    color: gray;
+    font-size: 40px;
+    font-weight: 500;
+}
+.kiss{
+    margin: 30px 0px;
+}
+.kiss img{
+    filter: grayscale(1);
+    width: 100%;
+    border-radius: 8px;
+}
+.jane-info p{
+    text-align: left;
+}
+.jane-info input{
+    padding: 12px 24px;
+    border: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    border-radius: 8px;
+}
+.jane-info input:hover{
+    background-color: gray;
+    color: white;
+}
+/* end info about Jane & John */
+/* start inv */
+.inv{
+    position: relative;
+    background-image: url(../img/flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.inv .inv-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.inv-content h1{
+    font-size: 64px;
+}
+.inv-content h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+/* end inv */
+/* start the wedding */
+.wedding{
+    margin-bottom: 35px;
+}
+.when-where{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.en{
+    text-align: center;
+}
+@media(min-width:768px){
+    .when-where{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }   
+}
+@media(min-width:992px){
+    .when-where{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }    
+}
+@media(min-width:1200px){
+    .when-where{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+}
+/* end the wedding */
+/* <!-- start RSVP --> */
+.rsvp{
+    background-color: #ffdddd !important;
+    text-align: center;
+    padding: 60px 0;
+}
+.rsvp h1{
+    font-size: 36px;
+}
+.rsvp p{
+    font-size: 20px;
+}
+.rsvp input{
+    padding: 16px 60px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #f443368c ;
+    font-size: 20px;
+    color: white;
+}
+.rsvp input:hover{
+    background-color: gray;
+    color: black;
+}
+/* <!-- end RSVP --> */
+/* start footer */
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 45px;
+    font-size: 25px;
+    font-family: "Caveat", cursive;
+}
+/* end footer */
